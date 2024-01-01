@@ -4,18 +4,24 @@ import Avatar from "../../../shared/components/Avatar";
 import Typography from "@mui/material/Typography";
 
 const MainContainer = styled("div")({
-  width: "97%",
+  width: "35%",
   display: "flex",
   marginTop: "10px",
+  padding: "1rem",
+  backgroundColor: "#232323",
+  margin: "1rem",
+  borderRadius:"10px"
 });
 
 const AvatarContainer = styled("div")({
   width: "70px",
+  textAlign:"center"
 });
 
 const MessageContainer = styled("div")({
   display: "flex",
   flexDirection: "column",
+  width:"80%"
 });
 
 const MessageContent = styled("div")({
@@ -25,6 +31,7 @@ const MessageContent = styled("div")({
 const SameAuthorMessageContent = styled("div")({
   color: "#DCDDDE",
   width: "97%",
+  backgroundColor:"pink"
 });
 
 const SameAuthorMessageText = styled("span")({
@@ -46,9 +53,9 @@ const Message = ({ content, sameAuthor, username, date, sameDay }) => {
         <Avatar username={username} />
       </AvatarContainer>
       <MessageContainer>
-        <Typography style={{ fontSize: "16px", color: "white" }}>
+        <Typography style={{ fontSize: "16px", color: "white", display:"flex"}}>
           {username}{" "}
-          <span style={{ fontSize: "12px", color: "#72767d" }}>{date}</span>
+          <span style={{ fontSize: "12px", color: "#72767d" , marginLeft:"auto"}}>{date}</span>
         </Typography>
         <MessageContent>{content}</MessageContent>
       </MessageContainer>

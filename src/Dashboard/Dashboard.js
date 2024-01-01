@@ -31,10 +31,11 @@ const Dashboard = ({ setUserDetails, isUserInRoom }) => {
   return (
     <Wrapper>
       <SideBar />
-      <FriendsSideBar />
+      {/* <FriendsSideBar /> */}
       <Messenger />
       <AppBar />
       {isUserInRoom && <Room />}
+      <FriendsSideBar />
     </Wrapper>
   );
 };

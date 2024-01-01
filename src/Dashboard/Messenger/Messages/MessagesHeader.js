@@ -7,12 +7,14 @@ const MainContainer = styled("div")({
   width: "98%",
   display: "column",
   marginTop: "10px",
+  textAlign: "center",
+  paddingTop:"48px"
 });
 
 const MessagesHeader = ({ name = "" }) => {
   return (
     <MainContainer>
-      <Avatar large username={name} />
+      {/* <Avatar large username={name} /> */}
       <Typography
         variant="h4"
         sx={{

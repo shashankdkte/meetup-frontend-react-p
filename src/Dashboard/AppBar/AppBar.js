@@ -9,8 +9,8 @@ const MainContainer = styled("div")({
   top: "0",
   height: "48px",
   borderBottom: "1px solid black",
-  backgroundColor: "#36393f",
-  width: "calc(100% - 326px)",
+  backgroundColor: "#222",
+  width: "77.5%",
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
@@ -22,6 +22,7 @@ const AppBar = () => {
     <MainContainer>
       <ChosenOptionLabel />
       <DropdownMenu />
+      <div></div>
     </MainContainer>
   );
 };
